@@ -23,6 +23,16 @@
     <link rel="stylesheet" href="/css/layout.css" />
       
     <script type="text/javascript" src="/scripts/jquery.tools.min.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-27075066-4"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-27075066-4');
+    </script>
     
     <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
 </head>
@@ -114,25 +124,5 @@
         </div>
     </footer>
                   
-    <script type="text/javascript">
-        (function (i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date(); a = s.createElement(o),
-            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-
-        ga('create', 'UA-27075066-4', 'vortecsystems.co.uk');
-        ga('send', 'pageview');
-    </script>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            jQuery('a[href$=".pdf"]').click(function () {
-                ga('send', 'event', 'Download Literature', 'Click', this.title);
-            });
-            jQuery('a[href^="mailto:"]').click(function () {
-                ga('send', 'event', 'Click Email Link', 'ClickMailLink', this.href);
-            });
-        });
-    </script>
+    <script type="text/javascript" src="/scripts/ga-event-tracking.js"></script>
 </body>
